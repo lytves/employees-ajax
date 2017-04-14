@@ -7,4 +7,4 @@ Español: Demonstración de tecnología Javascript y XML, AJAX
 
 **Demo**: https://lytves.github.io/employees-ajax/
 
-![alt tag](https://lytves.github.io/employees-ajax/employees-ajax.png)
+![alt tag](https://lytves.github.io/employees-ajax/employees-ajax-xml.png)
