@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Catálogo de empleados. MiEmpre-SA.com</title>
+    <link rel="stylesheet" href="reset.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="main.css" type="text/css" charset="utf-8">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div id="ventanilla"></div>
+    <div class="layer1">
+        <h1>MiEmpre-SA.com</h1>
+        <h2>Catálogo de empleados</h2>
+        <hr/>
+        <p class="style2"><strong><em>Por favor, seleccione el departamento:</em></strong></p>
+        <form method="post" class="departamento"> Departamento:&nbsp;&nbsp;
+            <select name="Select1">
+                <option value="0" selected="selected">Elige un departamento</option>
+            </select>
+        </form>
+        <hr/>
+        <br/>
+        <table align="center" class="cabecera">
+            <tr>
+                <th class="style1 celda_izq"><strong>EMPLEADO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ( <span id="numeroHeroe">-</span> / <span id="cantidadColegas">-</span> )
+			</strong>&nbsp;</th>
+                <th class="style1 celda_dcha"><strong>
+			<input type="text" id="emp_id" name="emp_id" value="" size="5" onkeypress="press(event)">
+			<input type="button" id ="emp_ad" name="emp_ad" value="IR" onclick="mostrarId()">
+			</strong>&nbsp;</th>
+            </tr>
+        </table>
+        <table align="center" class="data">
+            <tr>
+                <td>Codigo:</td>
+                <td id="codigo">&nbsp;</td>
+                <td>Fotografía</td>
+            </tr>
+            <tr>
+                <td>Nombre:</td>
+                <td id="nombre">&nbsp;</td>
+                <td id="foto" rowspan="6">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Departamento:</td>
+                <td id="dep">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Puesto:</td>
+                <td id="puesto">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Nivel:</td>
+                <td id="nivel">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Sueldo base:</td>
+                <td id="sueldo">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Complemento:</td>
+                <td id="complemento">&nbsp;</td>
+            </tr>
+        </table>
+        <br/>
+        <table class="navegacion">
+            <tr>
+                <td class="style2" onclick="cambiarPagina(1);">|&lt;&lt;&nbsp;</td>
+                <td class="style2" onclick="cambiarPagina(2);">&lt;&lt;&nbsp;</td>
+                <td class="style2" onclick="cambiarPagina(3);">&gt;&gt;&nbsp;</td>
+                <td class="style2" onclick="cambiarPagina(4);">&gt;&gt;|&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
